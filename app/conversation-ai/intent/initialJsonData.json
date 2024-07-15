@@ -1,0 +1,5 @@
+{
+  "text": "I want to go to london",
+  "language": "en",
+  "ner_ngram": ["names"]
+}

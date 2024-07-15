@@ -1,0 +1,28 @@
+.ui-rating {
+    color: #a0a0a0;
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .ui-rating > div {
+    margin-top: 8px;
+  }
+  
+  .ui-rating i {
+    margin-left: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .ui-rating i:first-child {
+    margin-left: 0;
+  }
+  
+  .ti-star-alt {
+    color: #a0a0a0;
+  }
+  
+  .ti-star-alt-selected {
+    color: #ffb715;
+  }
+  

@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+body{
+  font-family: "Figtree", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
+  min-height: 100svh;
+}
+.react-json-view{
+  font-family: monospace !important;
+}
+
+
+.css-46bh2p-MuiCardContent-root {
+  padding: 5px 14px !important;
+}
+.css-185gdzj-MuiCardHeader-root {
+  padding: 5px 14px !important;
+}
+
+
+.css-5c5o2v-MuiTypography-root {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+.css-mq0y63-MuiTypography-root {
+  font-weight: 600;
+  font-size: 1.2rem;
+
+}
+.css-yti8o6-MuiTableCell-root {
+  padding: 0px;
+}
+
+
+.MuiStepper-root.MuiStepper-horizontal.css-m5vj9m-MuiStepper-root {
+  margin-bottom: 15px;
+}
+.css-965q5i-MuiTypography-root {
+  font-weight: 600;
+  font-size: 1.1rem;
+  line-height: 1.6;
+} 
+
+.customradio .css-qfz70r-MuiFormGroup-root {
+  display: contents;
+ 
+}
+.marto{
+  margin-top: 30px;
+}
+.CorrectCount{
+  border: 1px solid #b3b1b1;
+  padding: 10px;
+  margin: 5px;
+  color: #000000;
+}
+.IncorrectCount{
+  border: 1px solid #b3b1b1;
+  padding: 10px;
+  margin: 5px;
+  color: #000000;
+}

@@ -1,0 +1,154 @@
+.switch-button *:focus {
+    outline: none;
+  }
+  
+  .switch-button {
+    display: flex;
+    align-items: center;
+    min-height: 60px;
+  }
+  
+  .switch-button > .switch-button-label {
+    order: 1;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #6A7280;
+    cursor: pointer;
+  }
+  
+  .switch-button > .switch-button-label > span {
+    font-weight: 700;
+    font-size: 14px;
+    display: block;
+  }
+  
+  .switch-button label {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    height: 20px;
+  }
+  
+  .switch-button label > input {
+    opacity: 0;
+  }
+  
+  .switch-button label > .switch-button-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 12px;
+    transition: background-color 0.4s, transform 0.4s;
+  }
+  
+  .switch-button label > .switch-button-slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    left: 2px;
+    bottom: 2px;
+    background-color: #F8F8F8;
+    border: 1px solid #E0E0E0;
+    transition: background-color 0.4s, transform 0.4s;
+  }
+  
+  .switch-button-checked label > .switch-button-slider {
+    background-color: #4285F4;
+    border-color: #4285F4;
+  }
+  
+  .switch-button-checked label > .switch-button-slider:before {
+    background-color: #ffffff;
+    border-color: #FFF;
+    transform: translateX(20px);
+  }
+  
+  .switch-button-checked > .switch-button-label > span {
+    color: black;
+  }
+  
+  .switch-button-focused label > .switch-button-slider {
+    border-color: rgba(66, 133, 244, 0.5);
+    box-shadow: 0 0 0px 4px rgba(66, 133, 244, 0.2);
+  }
+  
+  .switch-button-focused.switch-button-invalid label > .switch-button-slider {
+    border-color: rgba(236, 44, 40, 0.5);
+    box-shadow: 0 0 0px 4px rgba(236, 44, 40, 0.2);
+  }
+  
+  .switch-button-invalid label > .switch-button-slider {
+    border-color: #EC2C28;
+  }
+  
+  .switch-button.ui-disabled > .switch-button-label {
+    color: #C0C0C0;
+    cursor: not-allowed;
+  }
+  
+  .switch-button.ui-disabled label > .switch-button-slider {
+    background-color: #F8F8F8;
+    border-color: #E0E0E0;
+    cursor: not-allowed;
+  }
+  
+  .switch-button.ui-disabled label > .switch-button-slider:before {
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+  }
+  
+  .switch-button.ui-disabled > .switch-button-label > span {
+    color: #C0C0C0;
+  }
+  
+  .switch-button-align-right {
+    justify-content: space-between;
+  }
+  
+  .switch-button-align-right > label {
+    order: 2;
+  }
+  
+  .switch-button-align-right .switch-button-label {
+    order: 1;
+    margin-left: 0;
+    margin-right: 15px;
+  }
+  
+  .switch-button-border {
+    border-bottom: 1px solid #E0E0E0;
+  }
+  
+  /* Dark theme styles */
+  .ui-dark .switch-button > .switch-button-label {
+    color: #e0e0e0;
+  }
+  
+  .ui-dark .switch-button-checked > .switch-button-label > span {
+    color: #FFF;
+  }
+  
+  .ui-dark .switch-button label > .switch-button-slider:before {
+    background-color: #666;
+    border-color: #888;
+  }
+  
+  .ui-dark .switch-button-checked label > .switch-button-slider:before {
+    background-color: #ffffff;
+    border-color: #FFF;
+  }
+  
+  .ui-dark .switch-button.ui-disabled label > .switch-button-slider:before {
+    background-color: #E0E0E0;
+    border-color: #E0E0E0;
+  }
+  

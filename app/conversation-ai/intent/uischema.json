@@ -1,0 +1,17 @@
+{
+    "type": "VerticalLayout",
+    "elements": [
+      {
+        "type": "Control",
+        "scope": "#/properties/text"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/language"
+      },
+      {
+        "type": "Control",
+        "scope": "#/properties/ner_ngram"
+      }
+    ]
+  }

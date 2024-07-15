@@ -1,0 +1,163 @@
+{
+  "type": "object",
+  "required": [],
+  "properties": {
+    "widgetName": {
+      "type": "string",
+      "title": "Widget Name"
+    },
+    "visualType": {
+      "type": "string",
+      "title": "Visual Type",
+      "enum": [
+        "Card",
+        "Table",
+        "Line Chart",
+        "Bar Chart",
+        "Pie Chart",
+        "Area Chart",
+        "Stacked Bar Chart",
+        "Donut Chart",
+        "Mixed Chart",
+        "Radial Bar",
+        "Polar Area",
+        "Radar Chart",
+        "Map",
+        "Advance Table",
+        "J Table",
+        "Handson Table"
+      ]
+    },
+    "dataSource": {
+      "type": "string",
+      "title": "Data Source",
+      "enum": ["ICCS", "ICCS Latest"]
+    },
+    "dataType": {
+      "type": "string",
+      "title": "Data Source Type",
+      "enum": ["ICCS", "ICCS Latest"]
+    },
+    "pages": {
+      "type": "object",
+      "properties": {
+        "buildQuery": {
+          "type": "object",
+          "title": "Build Query",
+          "properties": {
+            "table": {
+              "type": "array"
+            },
+            "AddMapping": {
+              "type": "array"
+            },
+            "AddRule": {
+              "type": "array"
+            },
+            "ColumnsToShow": {
+              "type": "array"
+            }
+          }
+        },
+        "query": {
+          "type": "string"
+        },
+        "nltosql": {
+          "type": "string"
+        },
+        "AddDrillDownQuery": {
+          "type": "array",
+          "title": "Add Drill Down Query",
+          "items": {
+            "type": "object",
+            "properties": {
+              "Title": {
+                "type": "string"
+              },
+              "Yaxis": {
+                "type": "string"
+              },
+              "Xaxis": {
+                "type": "string"
+              },
+              "VisualType": {
+                "type": "string"
+              },
+              "drillDownQuery": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "Alias": {
+          "type": "object",
+          "title": "Alias",
+          "properties": {
+            "originalName": {
+              "type": "string",
+              "title": "Original Name"
+            },
+            "aliasName": {
+              "type": "string",
+              "title": "Alias Name"
+            },
+            "searchText": {
+              "type": "string",
+              "title": "Search Text"
+            }
+          }
+        },
+        "configuration": {
+          "type": "object",
+          "title": "Alias",
+          "properties": {
+            "fixedheader": {
+              "type": "boolean",
+              "title": "fixed header"
+            },
+            "defaultPageSize": {
+              "type": "string",
+              "title": "default Page Size",
+              "enum": ["5", "10", "15", "20"]
+            },
+            "columnForDateFilter": {
+              "type": "string",
+              "title": "Column For Date Filter",
+              "enum": ["Date1", "Date2"]
+            },
+            "addcolor": {
+              "type": "string",
+              "enum": ["#000000"]
+            },
+            "labelColor": {
+              "type": "string",
+              "enum": ["#000000"]
+            },
+            "AxisReferenceLabel": {
+              "type": "string",
+              "title": "Axis Reference Label",
+              "enum": ["default"]
+            },
+            "AddBarData": {
+              "type": "array",
+              "title": "Add Bar Data",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "addBarColumn": {
+                    "type": "string",
+                    "enum": ["default"]
+                  },
+                  "addBarColor": {
+                    "type": "string",
+                    "enum": ["#000000"]
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

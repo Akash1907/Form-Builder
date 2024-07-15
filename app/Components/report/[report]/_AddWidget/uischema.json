@@ -1,0 +1,314 @@
+{
+  "type": "VerticalLayout",
+  "elements": [
+    {
+      "type": "HorizontalLayout",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/widgetName",
+          "label": "Widget Name"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/visualType",
+          "label": "Visual Type"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dataType",
+          "label": "Data Type"
+        },
+        {
+          "type": "Control",
+          "scope": "#/properties/dataSource",
+          "label": "Data Source"
+        }
+      ]
+    },
+    {
+      "type": "Categorization",
+      "elements": [
+        {
+          "type": "Category",
+          "label": "Build Query",
+          "elements": [
+            {
+              "type": "Categorization",
+              "elements": [
+                {
+                  "type": "Category",
+                  "label": "Advance Query",
+                  "elements": [
+                    {
+                      "type": "VerticalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/pages/properties/buildQuery/properties/table"
+                        },
+                        {
+                          "type": "VerticalLayout",
+                          "elements": [
+                            {
+                              "type": "Control",
+                              "scope": "#/properties/pages/properties/buildQuery/properties/AddMapping"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "VerticalLayout",
+                          "elements": [
+                            {
+                              "type": "Control",
+                              "scope": "#/properties/pages/properties/buildQuery/properties/ColumnsToShow"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "VerticalLayout",
+                          "elements": [
+                            {
+                              "type": "Control",
+                              "scope": "#/properties/pages/properties/buildQuery/properties/AddRule"
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Category",
+                  "label": "Query",
+                  "elements": [
+                    {
+                      "type": "VerticalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/pages/properties/query"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Category",
+                  "label": "NL to Sql",
+                  "elements": [
+                    {
+                      "type": "VerticalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/pages/properties/nltosql"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "Category",
+                  "label": "Add Drill Down Query",
+                  "elements": [
+                    {
+                      "type": "VerticalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/pages/properties/AddDrillDownQuery",
+                          "options": {
+                            "elementLabelProp": "name",
+                            "detail": {
+                              "type": "VerticalLayout",
+                              "elements": [
+                                {
+                                  "type": "HorizontalLayout",
+                                  "elements": [
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/Title"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/Yaxis"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "HorizontalLayout",
+                                  "elements": [
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/Xaxis"
+                                    },
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/VisualType"
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "VerticalLayout",
+                                  "elements": [
+                                    {
+                                      "type": "Control",
+                                      "scope": "#/properties/drillDownQuery"
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Alias",
+          "elements": [
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/Alias/properties/originalName",
+                  "label": "Original Name"
+                },
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/Alias/properties/aliasName",
+                  "label": "Alias Name"
+                }
+              ]
+            },
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+               
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/Alias/properties/searchText",
+                  "label": "Search Text"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "Category",
+          "label": "Configuration",
+          "elements": [
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/configuration/properties/fixedheader",
+                  "label": "Fixed Header"
+                }
+                
+              ]
+            },
+            {
+              "type": "HorizontalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/configuration/properties/defaultPageSize",
+                  "label": "Default Page Size"
+                },
+               
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/configuration/properties/columnForDateFilter",
+                  "label": "Column For Date Filter"
+                }
+                
+              ]
+            },
+            {
+              "type": "HorizontalLayout",
+
+              "elements": [
+                {
+                  "type": "Group",
+                  "label": "Color",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/pages/properties/configuration/properties/addcolor"
+                    }
+                  ]
+                },
+                {
+                  "type": "Group",
+                  "label": "Label Color",
+                  "elements": [
+                    {
+                      "type": "Control",
+                      "scope": "#/properties/pages/properties/configuration/properties/labelColor"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "VerticalLayout",
+              "elements": [
+               
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/configuration/properties/AxisReferenceLabel",
+                  "label": "Axis Reference Label"
+                }
+              ]
+            },
+           
+            {
+              "type": "VerticalLayout",
+              "elements": [
+                {
+                  "type": "Control",
+                  "scope": "#/properties/pages/properties/configuration/properties/AddBarData",
+                  "options": {
+                    "elementLabelProp": "name",
+                    "detail": {
+                      "type": "HorizontalLayout",
+                      "elements": [
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/addBarColumn"
+                        },
+                        {
+                          "type": "Control",
+                          "scope": "#/properties/addBarColor"
+                        }
+                      ]
+                      
+                    }
+                  }
+                }
+              ],
+              "options": {
+                "expanded": false
+              }
+            }
+
+          ]
+        }
+      ],
+      "options": {
+        "variant": "stepper",
+        "showNavButtons": false
+      }
+    }
+  ]
+}

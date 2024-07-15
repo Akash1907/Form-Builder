@@ -1,0 +1,7 @@
+{
+  "text": "My name is Assisto",
+  "language": "en",
+  "ner_ngram": [
+    "names"
+  ]
+}

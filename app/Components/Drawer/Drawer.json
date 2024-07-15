@@ -1,0 +1,192 @@
+[
+  {
+    "text": "Dashboard",
+    "icon": "DashboardIcon",
+    "path": "/dashboard"
+  },
+  {
+    "text": "Analytics",
+    "icon": "AnalyticsIcon",
+    "path": "/analytics"
+  },
+  {
+    "text": "Voice360",
+    "icon": "AutoGraphIcon",
+    "children": [
+      {
+        "text": "Insights",
+        "icon": "LightbulbIcon",
+        "path": "/quality-analysis/insights"
+      },
+      {
+        "text": "Interaction",
+        "icon": "PeopleAltIcon",
+        "path": "/quality-analysis/interaction"
+      },
+      {
+        "text": "Leader-Board",
+        "icon": "LeaderboardIcon",
+        "path": "/quality-analysis/leader-board"
+      },
+      {
+        "text": "Analyze",
+        "icon": "ScoreIcon",
+        "path": "/quality-analysis/analyze"
+      },
+      {
+        "text": "Moments",
+        "icon": "ChatBubbleIcon",
+        "path": "/quality-analysis/moments"
+      },
+      {
+        "text": "Coaching",
+        "icon": "LinkIcon",
+        "path": "/quality-analysis/coaching"
+      },
+      {
+        "text": "Agent Cues",
+        "icon": "PersonIcon",
+        "path": "/quality-analysis/agent-cues"
+      },
+      {
+        "text": "Setting",
+        "icon": "SettingsIcon",
+        "path": "/quality-analysis/setting"
+      }
+    ]
+  },
+  {
+    "text": "Social 360",
+    "icon": "PublicRoundedIcon",
+    "children": [
+     
+      {
+        "text": "Social Network",
+        "icon": "MessageRoundedIcon",
+        "path": "/social360/connectWithUs"
+      },
+      {
+        "text": "Interaction",
+        "icon": "PeopleAltIcon",
+        "path": "/social360/interaction"
+      },
+      {
+        "text": "Leader-Board",
+        "icon": "LeaderboardIcon",
+        "path": "/social360/leader-board"
+      },
+      {
+        "text": "Analyze",
+        "icon": "ScoreIcon",
+        "path": "/social360/analyze"
+      },
+      {
+        "text": "Moments",
+        "icon": "ChatBubbleIcon",
+        "path": "/social360/moments"
+      },
+      {
+        "text": "Coaching",
+        "icon": "LinkIcon",
+        "path": "/social360/coaching"
+      },
+      {
+        "text": "Agent Cues",
+        "icon": "PersonIcon",
+        "path": "/social360/agent-cues"
+      },
+      {
+        "text": "Setting",
+        "icon": "SettingsIcon",
+        "path": "/social360/setting"
+      }
+    ]
+  },
+  {
+    "text": "Conversation AI",
+    "icon": "ForumIcon",
+    "children": [
+      {
+        "text": "DM",
+        "icon": "TryIcon",
+        "path": "https://dialogue-manager.vercel.app/dialogue-manager"
+      },
+      {
+        "text": "Intent",
+        "icon": "AccountTreeIcon",
+        "path": "/conversation-ai/intent"
+      },
+      {
+        "text": "NER",
+        "icon": "PersonSearchIcon",
+        "path": "/conversation-ai/ner"
+     },
+      {
+        "text": "Scorer",
+        "icon": "ScoreboardIcon",
+        "path": "/conversation-ai/scorer"
+      }
+    ]
+  },
+  {
+    "text": "User Management",
+    "icon": "GroupAddIcon",
+    "children": [
+      {
+        "text": "Manage Roles",
+        "icon": "AccountTreeIcon",
+        "path": "/user-management/manage-role"
+      },
+      {
+        "text": "Data Source",
+        "icon": "AccountTreeIcon",
+        "path": "/user-management/datasource"
+      },
+      {
+        "text": "Manage Permissions",
+        "icon": "AccountTreeIcon",
+        "path": "/user-management/manage-permission"
+      },
+      {
+        "text": "Manage Menus",
+        "icon": "AccountTreeIcon",
+        "path": "/user-management/manage-menu"
+      }
+
+    ]
+  },
+  {
+    "text": "Dialog Manager",
+    "icon": "AutoGraphIcon",
+    "children":[
+      
+    
+      {
+        "text": "Dialogue Manager v2",
+        "icon": "ForumIcon",
+        "path": "/dialog-manager/dialoguemanager2"
+      },
+      {
+        "text": "Workflow",
+        "icon": "AccountTreeIcon",
+        "path": "/dialog-manager/workflow"
+      },
+      {
+        "text": "Update and Encode",
+        "icon": "UpdateIcon",
+        "path": "/dialog-manager/updateAndEncode"
+      },
+      {
+        "text": "Store Conversation",
+        "icon": "AllInboxIcon",
+        "path": "/dialog-manager/StoreConversation"
+      },
+      {
+        "text": "Node Red",
+        "icon": "NodeRedIcon",
+        "path": "/dialog-manager/NodeRed"
+      }
+    ]
+    
+  }
+]

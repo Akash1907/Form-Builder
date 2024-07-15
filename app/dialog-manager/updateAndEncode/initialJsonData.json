@@ -1,0 +1,11 @@
+{
+  "client_id": "22",
+  "language": "en",
+  "ner_key": "name",
+  "values": [
+    "My name is Aakash Sharma.",
+    "I go by Priya Gupta.",
+    "Call me Rahul Patel.",
+    "I'm known as Nisha Singh."
+  ]
+}

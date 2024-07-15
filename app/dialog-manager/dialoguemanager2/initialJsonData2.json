@@ -1,0 +1,176 @@
+{
+  "goal_name": "eastman",
+  "client_id": "88",
+  "language": "en",
+  "source_language": "en",
+  "traget_language": "en",
+  "switch_language": true,
+  "question": "Hi, Hello, hi, hello, hey, Hey",
+  "slots": [
+    {
+      "response": "",
+      "type": "greetings",
+      "data": {
+        "question": "Welcome to Eastman Auto & Power Limited. Please choose from the following options",
+        "choices": true,
+        "bot_message": "question",
+        "response": "",
+        "pre_condition": {
+          "condition_type": "python",
+          "value_to_check": "{user_input}",
+          "condition": "value",
+          "error_message": "Please enter a 10 digit phone number"
+        },
+        "execution_order": [],
+        "functions": [],
+        "next_node": [
+          {
+            "condition_type": "similarity",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "Services",
+            "next_node": ["service-segment"]
+          },
+          {
+            "condition_type": "similarity",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "Sales",
+            "next_node": ["customer-number"]
+          }
+        ],
+        "apis": []
+      },
+      "apis": []
+    },
+    {
+      "response": "",
+      "type": "service-segment",
+      "data": {
+        "question": "Please choose from the following options",
+        "choices": true,
+        "bot_message": "question",
+        "response": "",
+        "pre_condition": {
+          "condition_type": "python",
+          "value_to_check": "{user_input}",
+          "condition": "value",
+          "error_message": "Please enter a 10 digit phone number"
+        },
+        "execution_order": [],
+        "functions": [],
+        "next_node": [
+          {
+            "condition_type": "similarity",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "Raise a Complaint",
+            "next_node": ["customer-number"]
+          },
+          {
+            "condition_type": "similarity",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "Check Complaints Status",
+            "next_node": ["check-complaint-status-1"]
+          },
+          {
+            "condition_type": "similarity",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "Product Registration",
+            "next_node": ["customer-number"]
+          },
+          {
+            "condition_type": "similarity",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "Other Query",
+            "next_node": ["customer-number"]
+          }
+        ],
+        "apis": []
+      },
+      "apis": []
+    },
+    {
+      "response": "",
+      "type": "check-complaint-status-1",
+      "data": {
+        "question": "Enter the complaint number:",
+        "choices": true,
+        "bot_message": "question",
+        "response": "",
+        "pre_condition": {
+          "condition_type": "python",
+          "value_to_check": "{user_input}",
+          "condition": "(value.isalnum() and len(value) == 19)",
+          "error_message": "Please enter the 19 character complaint number."
+        },
+        "execution_order": [
+          {
+            "type": "api"
+          }
+        ],
+        "functions": [],
+        "next_node": [
+          {
+            "condition_type": "python",
+            "value_to_check": "{user_input}",
+            "condition": "(value)",
+            "value_match": "",
+            "next_node": ["check-complaint-status-2"]
+          }
+        ],
+        "apis": []
+      },
+      "apis": [
+        {
+          "name": "complaint_status",
+          "endpoint": "https://crm.eaplworld.com/WhatsAPP_API/prd/getComplaint_Status.php",
+          "method": "GET",
+          "params": [
+            {
+              "key": "complaint_no",
+              "value": "{user_input}"
+            }
+          ],
+          "error_message": "Invalid complaint number. Please try again",
+          "headers": {
+            "Content-Type": "application/json"
+          },
+          "output": ["complaint_status_name"]
+        }
+      ]
+    },
+    {
+      "response": "",
+      "type": "check-complaint-status-2",
+      "data": {
+        "question": "",
+        "choices": true,
+        "bot_message": "Complaint status for the complaint number {apis.complaint_status.output[0].complaint_no} is {apis.complaint_status.output[0].status}.",
+        "response": "",
+        "pre_condition": {
+          "condition_type": "python",
+          "value_to_check": "{user_input}",
+          "condition": "(value)",
+          "error_message": "Please enter the 19 character complaint number."
+        },
+        "execution_order": [],
+        "functions": [],
+        "next_node": [
+          {
+            "condition_type": "python",
+            "value_to_check": "{user_input}",
+            "condition": "",
+            "value_match": "",
+            "next_node": ["final-node"]
+          }
+        ],
+        "apis": []
+      },
+      "apis": []
+    }
+  ]
+}
